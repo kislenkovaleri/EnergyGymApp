@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Energy+</string>
+    <string name="ups">Упс...</string>
+    <string name="no_subs_found">Похоже, на вашем телефоне не найдено абонемента, оформим? </string>
+    <string name="sign_up">Оформить</string>
+    <string name="signing_up">Оформление абонемента</string>
+    <string name="name">Имя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="pay">Оплатить</string>
+    <string name="prolong">Продлить</string>
+    <string name="timetable">Расписание</string>
+    <string name="trainers">Тренеры</string>
+    <string name="chats">Чаты</string>
+    <string name="login">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="send">Отправить</string>
+    <string name="chat">Чат</string>
+    <string name="no_chats">Нет активных чатов</string>
+    <string name="bio">Биография: </string>
+    <string name="chat_with_ai">Чат с AI</string>
+    <string name="chat_with_ai_description">Уточните нужные моменты с умным помощником </string>
+    <string name="deepseek_ai">DeepSeek AI</string>
+    <string name="your_question">Ваш вопрос..</string>
+    <string name="registration">Регистрация</string>
+    <string name="select_photo">Выбрать фото</string>
+    <string name="already_have_account">Уже есть аккаунт? Войти</string>
+    <string name="login_subtitle">Войдите в свой аккаунт</string>
+    <string name="no_account">Нет аккаунта? Зарегистрироваться</string>
+    <string name="logout">Выйти</string>
+    <string name="trainer_badge">Тренер</string>
+    <string name="subscription_active_until">Абонемент активен до: %1$s</string>
+    <string name="subscription_inactive">Абонемент не активен</string>
+    <string name="message">Сообщение</string>
+</resources>
