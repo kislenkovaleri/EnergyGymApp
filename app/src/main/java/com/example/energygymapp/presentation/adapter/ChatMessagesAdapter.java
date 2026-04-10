@@ -41,6 +41,7 @@ public class ChatMessagesAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private final String currentUid;
 
+    // используем AsyncListDiffer для оптимизации RecyclerView. с помощью этого компонента мы можем оптимизировать RecyclerView и не перерисовывать элементы, которые не изменились
     private final AsyncListDiffer<Object> differ = new AsyncListDiffer<>(this,
             new DiffUtil.ItemCallback<Object>() {
                 @Override

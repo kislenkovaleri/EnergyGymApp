@@ -78,7 +78,7 @@ public class UserRepository {
                             }
                             listener.onSuccess(user);
                         } else {
-                            // Not found in Clients — check Trainers node
+                            // Не найден в Clients — проверяем узел Trainers
                             databaseReference.child(DbConstants.NODE_TRAINERS).child(uid)
                                     .addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override

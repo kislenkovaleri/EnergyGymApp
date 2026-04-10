@@ -63,10 +63,10 @@ public class ChatActivity extends AppCompatActivity {
         binding.toolbar.setNavigationOnClickListener(v -> finish());
 
         if (chatId != null && !chatId.isEmpty()) {
-            // Coming from ChatsFragment - chat already exists
+            // Переход из ChatsFragment - чат уже существует
             chatViewModel.listenToMessages();
         } else if (otherUid != null && currentUid != null) {
-            // Coming from TrainersFragment - need to create/open chat
+            // Переход из TrainersFragment - необходимо создать/открыть чат
             chatViewModel.openChat(currentUid, otherUid);
             chatViewModel.getChatId().observe(this, id -> {
                 if (id != null) {

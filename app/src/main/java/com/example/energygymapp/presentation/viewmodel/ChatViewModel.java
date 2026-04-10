@@ -56,6 +56,7 @@ public class ChatViewModel extends ViewModel {
         return chatIdLiveData;
     }
 
+    // так как в эту ViewModel нам нужно передать аргумент (chatId), создаем для нее кастомный ViewModelFactory
     public static class Factory implements ViewModelProvider.Factory {
 
         private final String chatId;
