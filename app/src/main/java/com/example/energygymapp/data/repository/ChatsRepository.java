@@ -55,7 +55,7 @@ public class ChatsRepository {
                         userRepository.addChatId(currentUid, chatId);
                         userRepository.addTrainerChatId(otherUid, chatId);
                         listener.onSuccess(chatId);
-                    }).addOnFailureListener(e -> listener.onSuccess(chatId));
+                    }).addOnFailureListener(e -> listener.onFailure());
                 } else {
                     listener.onSuccess(chatId);
                 }

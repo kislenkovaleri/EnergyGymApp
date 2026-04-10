@@ -19,7 +19,7 @@ public class ChatViewModel extends ViewModel {
     private final MutableLiveData<List<Message>> messagesLiveData = new MutableLiveData<>();
     private final MutableLiveData<String> chatIdLiveData = new MutableLiveData<>();
 
-    private final String chatId;
+    private String chatId;
 
     public ChatViewModel(String chatId) {
         this.chatId = chatId;
@@ -29,6 +29,7 @@ public class ChatViewModel extends ViewModel {
 
     public void openChat(String currentUid, String otherUid) {
         chatsRepository.createOrOpenChat(currentUid, otherUid, userRepository, chatId -> {
+            ChatViewModel.this.chatId = chatId;
             chatIdLiveData.postValue(chatId);
             listenToMessages();
         });
