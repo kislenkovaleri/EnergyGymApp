@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="additional_color">#FFD0A5</color>
+    <color name="additional_color">#E98755</color>
     <color name="gray">#F3F3F3</color>
     <color name="trainer_color">#A5C8FF</color>
 </resources>
